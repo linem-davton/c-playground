@@ -58,5 +58,6 @@ int main(int argc, char *argv[]) {
   free_vector(&v);
   free_string(s);
   free(s);
+  printf("sizeof void: %lu\n", sizeof(void));
   return 0;
 }

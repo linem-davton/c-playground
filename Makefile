@@ -1,7 +1,7 @@
 BUILD_DIR = build
 SRC_DIR = src
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -fsanitize=address,undefined,leak
 
 SRCS := $(wildcard $(SRC_DIR)/*.c)
 EXECS := $(addprefix $(BUILD_DIR)/,$(basename $(notdir $(SRCS))))
